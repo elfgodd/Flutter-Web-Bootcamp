@@ -1,3 +1,4 @@
+import 'package:basic/ui/shared/custom_app_menu.dart';
 import 'package:flutter/material.dart';
 
 import 'package:basic/ui/shared/custom_flat_button.dart';
@@ -16,15 +17,23 @@ class _CounterPageState extends State<CounterPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'Counter: $counter',
-            style: TextStyle(
-              fontSize: 80,
-              fontWeight: FontWeight.bold,
+          CustomAppMenu(),
+          Spacer(),
+          FittedBox(
+            fit: BoxFit.contain,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                'Counter: $counter',
+                style: TextStyle(
+                  fontSize: 80,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center ,
             children: [
               CustomFlatButton(
                 text: 'Increment',
@@ -35,7 +44,8 @@ class _CounterPageState extends State<CounterPage> {
                 onPressed: () => setState(() => counter--),
               ),
             ],
-          )          
+          ),
+          Spacer(),         
         ],
       ),
     );
