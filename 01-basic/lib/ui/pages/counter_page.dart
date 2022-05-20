@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:basic/ui/shared/custom_flat_button.dart';
+
 class CounterPage extends StatefulWidget {
   @override
   State<CounterPage> createState() => _CounterPageState();
@@ -21,14 +23,19 @@ class _CounterPageState extends State<CounterPage> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          TextButton(
-            onPressed: () {
-              setState(() {
-                counter++;
-              });
-            },
-            child: Text('Increment'),
-          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomFlatButton(
+                text: 'Increment',
+                onPressed: () => setState(() => counter++),
+              ),
+              CustomFlatButton(
+                text: 'Decrement',
+                onPressed: () => setState(() => counter--),
+              ),
+            ],
+          )          
         ],
       ),
     );
