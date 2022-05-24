@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 import 'package:basic/ui/shared/custom_flat_button.dart';
 
-class CounterPage extends StatefulWidget {
+class CounterProviderPage extends StatefulWidget {
   @override
-  State<CounterPage> createState() => _CounterPageState();
+  State<CounterProviderPage> createState() => _CounterProviderPageState();
 }
 
-class _CounterPageState extends State<CounterPage> {
-  int counter = 10;
+class _CounterProviderPageState extends State<CounterProviderPage> {
+  int counter = 15;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class _CounterPageState extends State<CounterPage> {
           CustomAppMenu(),
           Spacer(),
           Text(
-            'Stateful Counter',
+            'Counter Provider',
             style: TextStyle(
               fontSize: 30,
              ),
