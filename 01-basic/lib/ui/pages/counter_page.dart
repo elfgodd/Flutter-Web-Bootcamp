@@ -1,6 +1,6 @@
-import 'package:basic/ui/shared/custom_app_menu.dart';
 import 'package:flutter/material.dart';
 
+import 'package:basic/ui/shared/custom_app_menu.dart';
 import 'package:basic/ui/shared/custom_flat_button.dart';
 
 class CounterPage extends StatefulWidget {
