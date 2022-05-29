@@ -1,7 +1,7 @@
-import 'package:basic/router/route-generator.dart';
 import 'package:flutter/material.dart';
-import '../ui/pages/counter_page.dart';
-import '../ui/pages/counter_provider_page.dart';
+
+import 'package:basic/router/route-generator.dart';
+import 'package:basic/ui/layout/main_layout_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
       //   '/provider': ( _ ) => CounterProviderPage(),
       // },
       onGenerateRoute: RouteGenerator.generateRoute,
+      builder: ( _, child ) {
+        return MainLayoutPage(
+          child: child ?? Container(),
+        );
+      },
     );
   }
 }
