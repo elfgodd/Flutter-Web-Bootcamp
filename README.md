@@ -62,4 +62,6 @@ https://flutter.dev/multi-platform/web
     - Manejo de las rutas en Flutter Web
     - Navegación de Flutter
 
-### 1.
+### 1. Get_it
+
+https://pub.dev/packages/get_it/install
