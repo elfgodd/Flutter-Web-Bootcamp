@@ -27,7 +27,6 @@ class _CounterProviderPageBody extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomAppMenu(),
           Spacer(),
           Text(
             'Counter Provider',
