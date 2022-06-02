@@ -65,3 +65,19 @@ https://flutter.dev/multi-platform/web
 ### 1. Get_it
 
 https://pub.dev/packages/get_it/install
+
+### 2. Navigation and routing
+
+https://docs.flutter.dev/development/ui/navigation
+
+## Section 4: Segmentos de URL y Query Parameters
+
+    Temas puntuales de la sección:
+
+    - Recibir parámetros de query
+    - Segmentos de URL
+
+### 1. Continuación de proyecto y explicación breve sobre Flutter Navigator 2.0
+
+Learning Flutter’s new navigation and routing system  
+https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7c9068155ade

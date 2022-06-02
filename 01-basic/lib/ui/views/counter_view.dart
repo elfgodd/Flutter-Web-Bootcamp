@@ -16,7 +16,6 @@ class _CounterViewState extends State<CounterView> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomAppMenu(),
         Spacer(),
         Text(
           'Stateful Counter',
