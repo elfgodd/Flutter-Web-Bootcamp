@@ -33,6 +33,11 @@ Sound null-safety, responsive design, carga de archivos, listas páginadas, admi
 - Carga de archivos y version de produccion
 - Despedida del curso
 
+## Short cuts
+
+1. (mateapp) keyboard shortcut to create basic starter
+2. (stles) creates a StatelessWidget
+
 ## Section 1: Introduccion
 
 ### 1. Instalaciones recomendadas y obligatorias
@@ -82,4 +87,28 @@ https://docs.flutter.dev/development/ui/navigation
 Learning Flutter’s new navigation and routing system  
 https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7c9068155ade
 
-### 2.
+### 2. Fluro - Router, Separar los handlers de las rutas
+
+Fluro is a null-safe Flutter routing library that adds flexible routing options like wildcards, named parameters and clear route definitions.  
+https://pub.dev/packages/fluro  
+https://github.com/lukepighetti/fluro/tree/main/example  
+https://github.com/lukepighetti/fluro/blob/main/example/lib/config/routes.dart  
+https://github.com/lukepighetti/fluro/blob/main/example/lib/config/route_handlers.dart
+
+## Section 5: Scrollable Landing Page
+
+    Temas puntuales de la sección:
+
+    Esta sección es muy importante para comprender aún más el funcionamiento de los URLs en Flutter Web, pero a la vez crearemos una aplicación bonita y elegante que tenga una interacción con diferentes elementos entre sí.
+
+    - Menú personalizado
+
+    - Animaciones
+
+    - PageController
+
+    - Segmentos de URL
+
+    - Posiciones iniciales del PageController
+
+    - Y muchas otras cosas

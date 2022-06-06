@@ -34,6 +34,9 @@ class MyApp extends StatelessWidget {
           child: child ?? Container(),
         );
       },
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Colors.white
+      )
     );
   }
 }
