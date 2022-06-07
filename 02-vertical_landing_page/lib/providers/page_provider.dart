@@ -7,17 +7,23 @@ class PageProvider extends ChangeNotifier {
 
   List<String> _pages = ['home', 'about', 'pricing', 'location', 'contact'];
 
-  goTo( int index ) {
+  createScrollController( String routeName ) {
+    this.scrollController = new PageController( initialPage: getPageIndex(routeName));
+  }
 
+  int getPageIndex( String routeName ) {
+    return (_pages.indexOf(routeName) == -1)
+        ? 0
+        : _pages.indexOf(routeName);
+  }
+  
+  goTo(int index) {
     // final routeName = _pages[index];
     // print(routeName);
 
     html.window.history.pushState(null, 'none', '#/${_pages[index]}');
 
-    scrollController.animateToPage( 
-      index, 
-      duration: Duration( milliseconds: 300 ), 
-      curve: Curves.easeInOut
-    );
+    scrollController.animateToPage(index,
+        duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
   }
 }
